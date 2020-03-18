@@ -6,9 +6,9 @@ import "../../@polymer/iron-flex-layout/iron-flex-layout.js";
 
 import { getModuleUrl } from "../../tricore-util/tricore-util.js";
 
-class TrimainContacts extends PolymerElement {
+class TrimainContactRoles extends PolymerElement {
 	static get is() {
-		return "trimain-contacts";
+		return "trimain-contact-roles";
 	}
 
 	static get template() {
@@ -30,8 +30,8 @@ class TrimainContacts extends PolymerElement {
 	}
 
 	static get importMeta() {
-		return getModuleUrl("triview-contacts/app/trimain-contacts.js");
+		return getModuleUrl("triview-contact-roles/app/trimain-contact-roles.js");
 	}
 }
 
-window.customElements.define(TrimainContacts.is, TrimainContacts);
+window.customElements.define(TrimainContactRoles.is, TrimainContactRoles);

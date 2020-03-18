@@ -1,16 +1,19 @@
+/* IBM Confidential‌ - OCO Source Materials‌ - (C) COPYRIGHT IBM CORP. 2020 - The source code for this program is not published or otherwise‌ divested of its trade secrets, irrespective of what has been‌ deposited with the U.S. Copyright Office. */
+
+
 import { PolymerElement, html } from "../@polymer/polymer/polymer-element.js";
 import { mixinBehaviors } from "../@polymer/polymer/lib/legacy/class.js";
 import { afterNextRender } from "../@polymer/polymer/lib/utils/render-status.js";
 import { TriPlatViewBehavior } from "../triplat-view-behavior/triplat-view-behavior.js";
 import { getModuleUrl } from "../tricore-util/tricore-util.js";
-import "./app/trimain-contacts.js";
+import "./app/trimain-contact-roles.js";
 
-class TriviewContacts extends mixinBehaviors(
+class TriviewContactRoles extends mixinBehaviors(
 	[TriPlatViewBehavior],
 	PolymerElement
 ) {
 	static get is() {
-		return "triview-contacts";
+		return "triview-contact-roles";
 	}
 
 	static get template() {
@@ -19,7 +22,7 @@ class TriviewContacts extends mixinBehaviors(
 
 			<dom-if id="mainContactsIf">
 				<template>
-					<trimain-contacts id="mainContacts"></trimain-contacts>
+					<trimain-contact-roles id="mainContacts"></trimain-contact-roles>
 				</template>
 			</dom-if>
 		`;
@@ -65,8 +68,8 @@ class TriviewContacts extends mixinBehaviors(
 	}
 
 	static get importMeta() {
-		return getModuleUrl("triview-contacts/triview-contacts-dev.js");
+		return getModuleUrl("triview-contact-roles/triview-contact-roles-dev.js");
 	}
 }
 
-window.customElements.define(TriviewContacts.is, TriviewContacts);
+window.customElements.define(TriviewContactRoles.is, TriviewContactRoles);
