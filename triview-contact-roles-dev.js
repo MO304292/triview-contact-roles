@@ -6,7 +6,7 @@ import { mixinBehaviors } from "../@polymer/polymer/lib/legacy/class.js";
 import { afterNextRender } from "../@polymer/polymer/lib/utils/render-status.js";
 import { TriPlatViewBehavior } from "../triplat-view-behavior/triplat-view-behavior.js";
 import { getModuleUrl } from "../tricore-util/tricore-util.js";
-import "./app/trimain-contact-roles.js";
+import "../../app/trimain-contact-roles.js";
 
 class TriviewContactRoles extends mixinBehaviors(
 	[TriPlatViewBehavior],
